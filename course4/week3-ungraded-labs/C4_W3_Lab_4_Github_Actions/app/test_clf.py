@@ -27,7 +27,7 @@ def test_pipeline_and_scaler():
     is_pipeline = isinstance(clf, Pipeline)
     assert is_pipeline
 
-    if isPipeline:
+    if is_pipeline:
         # Check if first step in the pipeline is an instance of 
         # sklearn.preprocessing.StandarScaler
         first_step = [v for v in clf.named_steps.values()][0]
