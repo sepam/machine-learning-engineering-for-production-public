@@ -17,6 +17,7 @@ class Wine(BaseModel):
     batches: List[conlist(item_type=float, min_items=13, max_items=13)]
 
 
+# make predictions on this endpoint
 @app.post("/predict")
 def predict(wine: Wine):
     batches = wine.batches
